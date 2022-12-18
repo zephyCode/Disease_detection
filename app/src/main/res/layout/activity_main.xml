@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:visibility="gone"
         android:id="@+id/linearLayout"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
@@ -15,6 +16,7 @@
         android:background="#FF0057"
         android:elevation="2dp"
         android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -44,6 +46,17 @@
 
     </LinearLayout>
 
+    <Button
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1"
+        android:text="Camera"
+        android:onClick="setPictureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <LinearLayout
         android:id="@+id/cardView"
         android:layout_width="match_parent"
@@ -63,7 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="270dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/plant" />
+            android:src="@drawable/eye" />
 
     </LinearLayout>
 
@@ -109,7 +122,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:includeFontPadding="false"
-            android:text="Your plant pic is:"
+            android:text="Your eye picture is:"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="19sp" />

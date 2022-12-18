@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.sudoku.hackthonapp.disease_detection.disease_detection.zephyCode'
+    namespace 'com.niuhackathon.glaucoma'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.sudoku.hackthonapp.disease_detection.disease_detection.zephyCode"
+        applicationId "com.niuhackathon.glaucoma"
         minSdk 20
         targetSdk 32
         versionCode 1
